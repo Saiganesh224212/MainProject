@@ -1,0 +1,49 @@
+.social-profiles-container {
+    margin: 60px auto; /* Adds space above the grid */
+    max-width: 800px; /* Optional: limits the width of the grid */
+  }
+  
+  .grid-container {
+    padding: 20px;
+    background: rgba(229, 62, 101, 0.6); /* Semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Remaining styles unchanged... */
+  .social-link {
+    text-decoration: none;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    padding: 10px;
+    color: #ffffff5e;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+  }
+  
+  .avatar {
+    width: clamp(35px, 5vw, 50px);
+    height: clamp(35px, 5vw, 50px);
+    margin-right: 10px;
+  }
+  
+  /* Specific styles for social media buttons */
+  .twitter { background-color: rgba(60, 64, 66, 0.8); }
+  .github { background-color:  rgba(60, 64, 66, 0.8); }
+  .linkedin { background-color:  rgba(60, 64, 66, 0.8); }
+  .instagram { background-color: rgba(60, 64, 66, 0.8); }
+  
+  .profile-name {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: bold;
+    color: rgb(239, 222, 222);
+  }
+  
+  .social-link:hover {
+    opacity: 0.8;
+  }
+  

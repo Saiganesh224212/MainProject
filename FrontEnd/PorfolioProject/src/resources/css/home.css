@@ -1,0 +1,82 @@
+/* Importing fonts (this should be at the top of your CSS file) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+/* General reset for the main container */
+.MainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light background color */
+    font-family: 'Nunito', sans-serif; /* Default font for the main content */
+}
+
+/* Side Menu Links */
+.sideMenuLinks {
+    text-decoration: none;
+    color: #5a5a5a; /* Muted gray for link color */
+    font-weight: 600; /* Semi-bold for links */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Added text-shadow for hover */
+}
+
+.sideMenuLinks:hover {
+    color: #7a7a7a; /* Slightly lighter gray on hover */
+    text-shadow: 0 0 5px rgba(201, 160, 160, 0.7); /* Subtle glow effect */
+}
+
+/* Active Button Style */
+.activeBtn {
+    background-color: rgba(201, 160, 160, 0.8); /* Semi-transparent pastel color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Poppins', sans-serif; /* Font for button text */
+    font-weight: 700; /* Bold for button text */
+}
+
+.activeBtn:hover {
+    background-color: rgba(171, 130, 130, 0.9); /* Darker tone on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+.activeBtn:focus {
+    outline: 2px solid rgba(201, 160, 160, 0.8); /* Focus state outline */
+}
+
+/* Typography Enhancements */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif; /* Custom font for headings */
+    color: #4b4b4b; /* Subtle dark color */
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-family: 'Nunito', sans-serif; /* Use Nunito for paragraph text */
+    color: #666; /* Muted gray for better blending */
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 1.5em;
+}
+
+/* Animation for MainContainer on load */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.MainContainer {
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}

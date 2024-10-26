@@ -1,0 +1,33 @@
+.listItem {
+    border: 2px solid #4a4a4a; /* Dark border for contrast */
+    background-color: rgba(135, 128, 240, 0.9); /* Slightly transparent background */
+    border-radius: 10px;
+    color: #333; /* Dark text for readability */
+    padding: 16px; /* Spacing for comfort */
+    margin: 10px 0; /* Vertical spacing between items */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.listItem:hover {
+    background-color: rgba(202, 224, 237, 0.8); /* Light hover color */
+    cursor: pointer; /* Indicate clickable */
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deepen shadow on hover */
+}
+
+/* Animation on load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.listItem {
+    animation: fadeIn 0.5s ease forwards; /* Apply animation on load */
+}
