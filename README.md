@@ -143,13 +143,19 @@ npm run lint
 Clone the repository:
 
 ```bash
-git clone https://github.com/Saiganesh224212/PorfolioProject
+git clone https://github.com/Saiganesh224212/MainProject
 ```
 
-Navigate to the project directory:
+Navigate to the project directories (Front-End and Backend):
 
 ```bash
+#For Frontend
+cd FrontEnd
 cd PorfolioProject
+
+#For Backend
+cd BackEnd
+cd server
 ```
 
 Install dependencies:
@@ -160,10 +166,22 @@ npm install
 
 ## Running the Project
 
-After installation, run the project locally:
+After installation, run the project locally(First run the Server, then run the FrontEnd):
 
 ```bash
-npm start
+#For Server
+npn run nodemonRun
+
+#For Frontend
+npm Start
 ```
 
 ## Screenshots of the Running Webpage
+
+![1729954474925](image/README/1729954474925.png)
+
+![1729954493284](image/README/1729954493284.png)
+
+![1729954501722](image/README/1729954501722.png)
+
+![1729954588284](image/README/1729954588284.png)
